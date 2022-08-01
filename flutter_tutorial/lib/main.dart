@@ -6,11 +6,14 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp ({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
-      home:
+      home: Center(
+        child: Container( width: 50, height: 50, color: Colors.blue)
+      )
     );
+
   }
 }
