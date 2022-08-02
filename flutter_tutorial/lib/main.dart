@@ -11,9 +11,18 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [ Icon(Icons.star), Icon(Icons.star), Icon(Icons.star) ]
+        appBar: AppBar(
+            title: Text('This is Android Application')
+        ),
+        body: Text( 'Hello World, This is Flutter'),
+        bottomNavigationBar: BottomAppBar(
+          child: SizedBox(
+            height: 70,
+            child: Row (
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [ Icon(Icons.phone), Icon(Icons.message), Icon(Icons.contact_page) ]
+            ),
+          )
         )
       )
     );
