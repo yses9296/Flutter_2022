@@ -14,16 +14,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text('This is Android Application')
         ),
-        body: Text( 'Hello World, This is Flutter'),
-        bottomNavigationBar: BottomAppBar(
-          child: SizedBox(
-            height: 70,
-            child: Row (
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [ Icon(Icons.phone), Icon(Icons.message), Icon(Icons.contact_page) ]
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            width: double.infinity, height: 150,
+            decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                border: Border.all(color: Colors.amber)
             ),
-          )
+          ),
         )
+
       )
     );
 
