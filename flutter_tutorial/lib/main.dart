@@ -14,15 +14,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text('This is Android Application')
         ),
-        body: Align(
-          alignment: Alignment.topCenter,
-          child: Container(
-            width: double.infinity, height: 150,
-            decoration: BoxDecoration(
-                color: Colors.blueGrey,
-                border: Border.all(color: Colors.amber)
-            ),
-          ),
+        body: SizedBox(
+          child: Text('Hello, This is Flutter',
+              style: TextStyle(color: Colors.green,
+              )
+          )
         )
 
       )
