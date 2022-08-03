@@ -16,7 +16,10 @@ class MyApp extends StatelessWidget {
         ),
         body: SizedBox(
           child: Text('Hello, This is Flutter',
-              style: TextStyle(color: Colors.green,
+              style: TextStyle(
+                color: Color.fromRGBO(255, 24, 150, 1),
+                backgroundColor: Colors.blue,
+                fontWeight: FontWeight.w700
               )
           )
         )
