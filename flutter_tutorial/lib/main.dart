@@ -12,18 +12,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-            title: Text('This is Android Application')
+          leading: Icon(Icons.star), //left menu (like logo)
+          title: Text('This is Android Application'),
+          actions: [Icon(Icons.star), Icon(Icons.star), Icon(Icons.star), Icon(Icons.star)],//right menu
         ),
         body: SizedBox(
-          child: Text('Hello, This is Flutter',
-              style: TextStyle(
-                color: Color.fromRGBO(255, 24, 150, 1),
-                backgroundColor: Colors.blue,
-                fontWeight: FontWeight.w700
-              )
-          )
         )
-
       )
     );
 
